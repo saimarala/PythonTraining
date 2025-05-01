@@ -1,0 +1,118 @@
+pyton is dynamically typed programming language 
+Datatype no need to specify based on the data it automatically assign
+The variable can have any type of data once you specify the data ypu can changes any type of data
+
+
+Data types
+-----------------
+Text Type - str
+Numeric Type – int, float, complex
+Sequence Type – string, list, tuple
+Mapping Type – dict
+Boolean Type– bool
+Set Type – set, frozenset
+
+Operators
+Operator - a symbol which will perform an operation between two or more variables
+
+List
+A list is a collection which is order and changeable
+muttable
+[]
+Tuple
+A tuple is a collection which is order and chageable
+immuttable
+()
+1.we cannot add existing value
+2.we cannot append the new value
+3.we cannot insert the new value
+4.we cannot remove a value
+
+Set
+A set is collection which is unordered and unindexed. In python sets are writtten with curly brackets
+{}
+muttable
+
+dictionary
+A dictionary is collection which is unordered, changeable(mutable) and indexed. In python dcitionaries are written with curly brcakets, and they have keys and values.
+{}
+
+Functions
+Function means set of statements which will perform task
+1.function declration/creation
+2.calling the function/invoking function
+function does not take argumnets not return any value
+function does not take argumnets but return any value
+function does take argumnets not return any value
+function does take argumnets and also return any value
+
+Global and local variables
+The variables create outside of the function are called global varaibles
+The variables create inside of the function are called local varaibles
+
+Python - structured + object oriented
+oops(object oriented programming concepts)
+class
+object
+Inheritance
+Polymorphism
+
+class object
+Employee -----> sai,test,sailo
+Animal --------->Dog, HorseElephant etc..
+
+class ---> collection of varaibles(attributes) and methods (behaviour)
+A class is blue print
+Logical entity
+Does not any occupy any space in the memeory
+Object ----> object is an instance of class
+Physical entity
+Occupy certain amount of space in memeory
+
+Inheritance
+Acquiring all the attribute(variables) and behaviour(methods) from one class to another class is called inheritance
+
+objective
+--------------
+1.code re-usability
+2.avoid duplication
+Types of inheritance
+1.single
+2.multilevel
+3.hierarchy
+4.multiple
+
+Ploymorphism
+shape-- circle-- rectangle square.........
+polymorphism we can implement using overloading concept
+
+Modules and pacakges
+---------------------
+Modules ----> collection of functions, classes(variables+methods)
+1.How to create a module
+2.how to call the functions from one module to another module
+3same functions 2 modules
+
+Approach1: import moduleName
+Approach2: from moduleName import funcations,classs
+
+Pcakages
+---------
+Collection of modules
+Packages ---> Modules---> functions & classes
+
+Exception handling
+Exception is an event which will cause program termination
+
+try,except
+except-->executes only exception occured
+esle-->executes only exceptions not occured
+finally-->always execute
+
+File handling/working with the text
+----------------------------------
+ 
+
+
+
+
