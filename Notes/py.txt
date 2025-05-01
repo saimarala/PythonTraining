@@ -1,0 +1,416 @@
+
+Introduction to Python programming - 2
+Comments
+-----------------------
+descriptions about logics code mainatainace easy
+comments are ignored during run time Non executable codes
+single line comment --> ctrl+/ --> #
+Multi line comment --> ctrl+shift+/ -->
+""" """ or
+I
+Indentation --> syntax
+-----------------------
+Indentation defines code blocks in Python.
+Statements with the same indentation belong to the same block.
+Use four spaces or tab for indentation.
+Indentation is required for control flow, loops, functions, and classes.
+
+
+Identifiers
+-----------------------
+A name in python program
+variable name, class name, method name, module name, package name letters (lower or upper)
+digits (0 to 9)
+underscores (_)
+Hello_world_123.py
+should not begin with digit
+123_Hello_world.py
+should not contain dollar ($) case sensitive
+X = 10
+X = 20
+
+Reserved words in Python are not allowed as identifiers
+
+Reserved words or keywords
+some meaning or funtionlity 35 keyowrds
+Variable
+reserved memory location --> data or information
+data type
+Based on data, data type is automatically assigned by python Dynamically Typed Language
+
+
+type() --> class --> datatype of variable
+anything in python if we want to delete explicitly --> del keyword
+del --> we cannot access again --> unbind operation --> Name error
+None--> Nothing
+a = None --> garbage collection --> 16 to 24 bytes
+
+
+Data Type and Data Strcuture
+-----------------------
+Data Type or Primitive Data Types represents the type of data present inside a variable.
+Integers, Floats, Strings, Booleans.
+Data Structure or Non-Primitive Data Types is a way to organize and store multiple values in a structured way.
+Lists, Tuples, Sets, Dictionaries.
+
+
+Abstract Data Types (ADTs) define a logical structure but do not specify implementation details. Stack (LIFO), Queue(FIFO), Linked List(Efficient memory management), Graph (Networks, relationships).
+Stack, Queue Linear and Graphs, Trees → Non - Linear
+ADT's are not built into Python but can be implemented using non-primitive data structures
+Reading data from user or Keyboard
+input() function --> string data type
+Type casting
+converting from one data type to another data type
+int(), float(), complex(), bool(), str()
+If we want to convert str type to int type, compulsary str should contain only integral value and should be specified in base-10.
+
+
+type() => to check the type of variable id() ⇒ to get address of object
+print() to print the value
+
+
+Escape characters
+In String literals we can use escape characters to associate a special meaning.
+\n --> new line
+\t --> Horizontal Tab
+Constants
+Python does not have a built-in concept of constants.
+By convention, uppercase names are used for variables that should not change, but their values can still be modified in Python.
+PI = 3.14
+
+
+Operators in Python
+-----------------------
+Operator --> symbol performs operations on values (operands)
+operators Types
+	Arithmetic
+	Relational or Comparision
+	Equality
+	Logical Opeartors
+	Assignment
+	Teranary or Conditional
+	Special
+		identiy
+		Membership
+	Bitwise operators
+
+
+Arithmetic
+-----------------------
+   / --> Division --> Float value
+  // --> Floor division
+          if both values are int --> int
+          if atleast one value is float --> float
+  % --> Modulo division --> remainder
+  + --> concatenation operator
+  *--> repitition operators
+
+
+Relational or Comparision
+Equality
+Always return me boolean result chaining is possible
+True if all comparisions are true False --> if atlest one comparision is false
+Logical Opeartors
+Boolean --> True or False
+and --> if both arguments are True then result is True or--> if atlest one argument is True then Result is True not --> Complement
+Non Boolean
+▸ and empty string --> False
+non-empty string or non-zero --> True
+
+
+x and y --> if x is false then result is x else it is y 10 and 20 --> 20
+x or y --> if x is True the result is x otherwise y
+10 or 20 --> 10
+not x
+not 10 --> False
+
+
+Assignment
+aasign some data to a variable x = 10 --> Assignment
+x == 20 --> content comparison
+compound Asssingment
+Ternary or Conditional
+a if condition else b
+
+Special
+  identity
+     is and is not
+  Membership
+     in and not in
+
+Special
+identity
+	is and is not
+Membership
+	in and not in --> checks presence of items or objects in a sequence
+
+Bitwise operators	
+
+any type of operator will retun data
+
+
+
+Control flow in Python
+------------------------------------
+describes order in which statements needs to be executed.
+--------------------------------------
+Types of Control flow statements
+Conditional Statements
+Iterative statements
+Transfer statements
+
+Logical expression
+Equals: a == b
+Not Equals: a != b
+Less than: ak b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+
+
+Conditional Statements
+simple if
+----------------------
+if condition:
+  Action-1
+  Action-2
+  Action-3
+= ->  Assignment
+== --> content comparision
+
+
+if-else
+------------------------
+if condition:
+	Action-1
+else:
+	Action-2
+% --> Modulo division --> always returns remainder
+login --> system --> uşrname and password
+
+
+if-elif-else
+----------------------------------
+if condition1:
+	 Action-1
+elif condition2:
+	Action-2
+elif condition3:
+	Action-3
+else:
+	Default Action
+
+Iterative statements
+-----------------------------
+If we want to execute a group of statements multiple times then we should go for Iterative statements. 
+while loop
+
+------------------------------------
+If we want to execute a group of statements iteratively until some condition is false, then we should go for a while loop.
+3 important things for while loop
+
+------------------------------------
+Initialization or starting point or start value
+Condition
+Increment/decrement
+
+while conndition:
+       body
+
+
+Flow control - 2
+--------------------------
+for loop with range function --> powerful combination
+range function
+--------------------------------------------
+generates sequenece of numbers from start to end or stop
+range(stop) --> form1
+range(start, stop) --> form2
+range(start, stop, step) --> form3
+range(100,200)
+--> 100, 101, 102,,.....199
+step --> difference between each number in the sequenec
+	by default --> 1
+		step --> +ve --> forward direction(L-R)--> end-1 or stop-1
+		step --> -ve --> reverse direction (R-L) --> end+1 or stop+1
+range (200, 100,-1) --> 200,199,198,197,196.....101
+
+
+range function --> range data type--> sequenece of numbers --> immutable (not modifiable)
+
+
+for loop
+----------
+If we want to execute some action for every element present in some sequence (string or collection) then we should go for loop.
+while loop --> group of statements multiple times --> condition
+for loop --> group of statements multiple times --> every element in the sequenece
+for each_element in sequenec:
+	Action
+
+for loop + range function
+range(10) --> 0 to 9
+Nested Loops
+--------------
+Loops inside another loops
+
+Transfer Statements
+--------------------------------
+break -->We can use break statement inside loops to break loop execution based on some condition.
+
+continue -->We can use the continue statement to skip the current iteration and continue the next iteration based on some condition.
+pass -->empty statment wont 
+       do anything
+
+
+BA
+def func():
+	pass
+Loops with else Block
+-----------------------------
+Inside loop execution, if break statement not executed, then only else part will be executed. else means loop without break.
+
+Before break or continue statements will be executed.
+After break statements will not be executed including else block in the for loop.
+After continue else block will be executed in the for loop.
+Provided condition is satisfied for both break and continue.
+
+What is the difference between for loop and while loop in Python?
+We can use loops to repeat code execution
+Repeat code for every item in sequence for loop
+Repeat code as long as condition is true while loop
+
+
+String Data Type
+--------------------------------
+Any programming langugae --> Most commonly used object
+string
+sequenece of characters or charcater --> "" or''
+No char datatype
+Multi line string literals --> ''' ''' or """ """
+s = "Welcome to Python Programming"
+s = "Welcome to
+      Python
+      Programming"
+
+we should never use same quotes inside same quotes  -->opposite quotes
+"Welcome to "Python" Programming" 'Welcome to 'Python' Programming'
+""" --> '' or ""
+''' --> '' or ""
+
+
+\ --> esacpe chacter
+Access characters inside a string
+---------------------------------------
+Every character inside string is having address --> index or location
+Index or Location or Address
+slice operator
+S = 'HELLO'
+L --> R --> Forward direction
+First character --> default index --> >
+R --> L --> Reverse or Backward direction
+
+
+len() --> returns count of characters
+returning
+-------------------
+print()
+variable
+range of indexes
+------------------------
+s = 'welcome'
+forward --> to 6
+rverse --> -1 to -7
+If we are trying to access characters of a string with out of range index then we will get IndexError
+
+range(1,10,2) --> 1,3,5,7,9
+slice operator
+--------------------------------
+s[begin index:end index: step] --> s[10:100:1]
+Begin Index - Specifies the starting position of the slice (substring)
+End Index - Specifies the termination position of the slice (substring)
+Step - The interval between elements (optional). the step controls how many elements to skip when traversing the sequence. By default step value is 1
+    If +ve → forward direction left to right consider begin to end-1
+    If -ve → backward direction → right to left consider begin to end+1.
+
+If we are not specifying begin index then it will consider from beginning of the string.
+If we are not specifying end index then it will consider up to end of the string.
+If we are not specifying both begin and end indexes then slice will consider whole string.
+if endindex is out of range then slice operator will never raise index error rather it will consider
+Full string starting from begin index in both forward and reverse directions.
+
+
+String Data Type -2
+-----------------------------
+Mathematical operators
+-----------------------------
+Concatenation operator Repitition operator
+--> compulsory both arguments must be string data type --> one argument must be string and other argument must be integer
+len() --> counts number of characters in a string and it returns that value
+presence of character pr substring in main string
+-----------------------------
+Identity --> is, is not
+Membership --> in, not in
+
+Remove spaces in string
+-----------------------------
+rstrip() 1strip()
+strip() --> r+1
+Comparison of strings
+-----------------------------
+lexicographically --> ASCII Code
+First character comparison will be done
+ord() --> ASCII Code
+chr() --> Charcater
+
+
+Find Substrings
+--------------------------
+Ifind()
+--> index of first occurence of substring index() ---> same as find() --> Error if not found
+-> -1 if not found
+rfind() --> index of last occurence of substring --> -1 if not found rindex() ---> same as rfind() --> Error if not found
+"Python is very very simple"
+
+count() --> number of times a substring has occured in main string
+replace() --> repace substring in a main string
+Once we creates string object, we cannot change the content.
+This non changeable behaviour is nothing but immutability.
+If we are trying to change the content by using any method, then with those changes a new object will be created and changes won't be happend in existing object.
+string --> immutable data type
+
+Splitting and Joining the strings
+-------------------------------
+S = "05/03/2025"
+s.split(separator) --> List space --> default separator
+join --> sequence --> list, tuple, set, dictionary
+separator.join(sequence)
+
+Changing Case of a String
+-------------------------------
+upper() → Converts all characters to upper case
+lower()→ Converts all characters to lower case
+swapcase() → Converts all lower case characters to upper case and vice versa
+title() → Converts all character to title case. i.e first character in every word should be upper case and all remaining characters should be in lower case.
+capitalize() → Only first character will be converted to upper case and all remaining characters can be converted to lower case
+
+Check Type of Characters Present in a String
+------------------------------
+isalnum() isalpha() isdigit()
+islower()
+Returns True if all characters are alphanumeric( a to z, A to Z,0 to9) Returns True if all characters are only alphabet symbols (a to z,A to Z) Returns True if all characters are digits only(0 to 9)
+Returns True if all characters are lower case alphabet symbols
+isupper() ⇒ Returns True if all characters are upper case aplhabet symbols
+istitle() ⇒ Returns True if string is in title case
+isspace() ⇒ Returns True if string contains only spaces
+
+
+#String Formatting
+mame = "Mohan"
+salary = 25000
+Location = "London"
+# print("My name is Mohan, Salary is 25000 located in London")
+# print(f"My name is {name}, Salary is {salary} located in {location}")
+print("My name is {}, Salary is {} located in {}".format(name, salary, location))
+print("My name is {0}, Salary is {1} located in {2}".format(name, salary, location))
+print("My name is {x}, Salary is {y} located in {z}".format(x=name, y=salary, z=location))
+
